@@ -1,0 +1,82 @@
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bootstrap library collection" />
+    <meta name="keywords" content="bootstrap5, bootstrap libraries, bootstrap5 libraries, bootstrap select, bootstrap dropdown" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&amp;display=swap" />
+    <title>use-bootstrap | Bootstrap library collection</title>
+    <style>
+      [data-bs-theme='light'] #bs-theme-light {
+        display: none;
+      }
+      [data-bs-theme='dark'] #bs-theme-dark {
+        display: none;
+      }
+      body {
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container justify-content-start">
+        <a class="navbar-brand d-flex align-items-end gap-3" href="/">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="47" width="47" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"></path>
+            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"></path>
+          </svg>
+          <div class="d-flex flex-column">
+            <span class="fs-3 lh-1 fw-bold">use-bootstrap</span>
+            <span class="fs-6">Bootstrap library collection</span>
+          </div>
+        </a>
+        <div class="ms-auto d-flex align-items-center gap-3">
+          <a class="fs-5 link-body-emphasis" href="https://github.com/use-bootstrap" target="_blank">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+          <div>
+            <input type="checkbox" class="btn-check" id="bs-theme" autocomplete="off" />
+            <label class="btn p-0 border-0 fs-5" for="bs-theme" id="bs-theme-dark" title="Toggle dark mode">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </label>
+            <label class="btn p-0 border-0 fs-5" for="bs-theme" id="bs-theme-light" title="Toggle light mode">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <a href="https://github.com/use-bootstrap/use-bootstrap-select" class="fw-semibold fs-5 card-title stretched-link link-body-emphasis text-decoration-none" target="_blank">use-bootstrap-select</a>
+              <p class="mb-0 mt-2 text-body-secondary">Create a select element using the native Bootstrap 5 dropdown UI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById('bs-theme').addEventListener('change', (e) => {
+        document.documentElement.setAttribute('data-bs-theme', e.target.checked ? 'dark' : 'light')
+      })
+    </script>
+  </body>
+</html>

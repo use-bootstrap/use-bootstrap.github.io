@@ -1,0 +1,32 @@
+{
+  "name": "use-bootstrap",
+  "description": "Bootstrap library collection",
+  "version": "0.0.1",
+  "repository": "https://github.com/use-bootstrap",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "bootstrap5",
+    "bootstrap libraries",
+    "bootstrap5 libraries",
+    "bootstrap select",
+    "bootstrap dropdown"
+  ],
+  "scripts": {
+    "dev": "halaman dev src/pages --watch=src/**/*",
+    "build": "halaman build src/pages docs --clean --pretty && purgecss --css docs/bootstrap.min.css --content docs/index.html --output docs/bootstrap.min.css && halaman serve docs",
+    "serve": "halaman serve docs"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "0.40.0",
+    "@types/node": "20.4.7",
+    "@types/react": "18.2.18",
+    "eslint": "8.46.0",
+    "eslint-plugin-react": "7.33.1",
+    "halaman": "0.1.1",
+    "purgecss": "5.0.0",
+    "react": "18.2.0",
+    "react-icons": "4.10.1",
+    "typescript": "5.1.6"
+  }
+}

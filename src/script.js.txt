@@ -1,0 +1,3 @@
+document.getElementById('bs-theme').addEventListener('change', (e) => {
+  document.documentElement.setAttribute('data-bs-theme', e.target.checked ? 'dark' : 'light')
+})
