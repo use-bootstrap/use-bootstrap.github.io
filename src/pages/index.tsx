@@ -1,5 +1,5 @@
-import { BsBootstrapFill, BsGithub } from 'react-icons/bs'
-import { FiMoon, FiSun } from 'react-icons/fi'
+import { BsBootstrapFill, BsGithub } from 'react-icons/bs/index.js'
+import { FiMoon, FiSun } from 'react-icons/fi/index.js'
 import pkg from '../../package.json'
 import style from '../style.css.txt'
 import script from '../script.js.txt'
