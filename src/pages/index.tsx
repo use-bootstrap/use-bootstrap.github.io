@@ -1,5 +1,6 @@
-import { BsBootstrapFill, BsGithub } from 'react-icons/bs/index.js'
+import { BsBootstrapFill, BsGithub, BsTags } from 'react-icons/bs/index.js'
 import { FiMoon, FiSun } from 'react-icons/fi/index.js'
+import { AiOutlineSelect } from 'react-icons/ai/index.js'
 import pkg from '../../package.json'
 import style from '../style.css.txt'
 import script from '../script.js.txt'
@@ -7,9 +8,16 @@ import script from '../script.js.txt'
 export default function () {
   const items = [
     {
+      icon: <AiOutlineSelect />,
       name: 'use-bootstrap-select',
       desc: 'Create a select element using the native Bootstrap 5 dropdown UI',
       link: 'https://github.com/use-bootstrap/use-bootstrap-select',
+    },
+    {
+      icon: <BsTags />,
+      name: 'use-bootstrap-tag',
+      desc: 'Tag input for Bootstrap 5',
+      link: 'https://github.com/use-bootstrap/use-bootstrap-tag',
     },
   ]
   return (
@@ -21,9 +29,7 @@ export default function () {
         <meta name="keywords" content={pkg.keywords.join(', ')} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="stylesheet" href="/bootstrap.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.upset.dev/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" />
         <title>{`${pkg.name} | ${pkg.description}`}</title>
         <style dangerouslySetInnerHTML={{ __html: style }}></style>
       </head>
@@ -50,12 +56,15 @@ export default function () {
           </div>
         </nav>
         <div className="container py-3">
-          <div className="row">
+          <div className="row g-4">
             {items.map(item => (
               <div key={item.name} className="col-12 col-md-6 col-lg-4">
-                <div className="card">
+                <div className="card h-100">
                   <div className="card-body">
-                    <a href={item.link} className="fw-semibold fs-5 card-title stretched-link link-body-emphasis text-decoration-none" target="_blank">{item.name}</a>
+                    <a href={item.link} className="fw-semibold fs-5 card-title stretched-link link-body-emphasis text-decoration-none" target="_blank">
+                      {item.icon}
+                      <span className="ms-2">{item.name}</span>
+                    </a>
                     <p className="mb-0 mt-2 text-body-secondary">{item.desc}</p>
                   </div>
                 </div>
