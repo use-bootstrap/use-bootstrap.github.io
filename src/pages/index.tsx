@@ -11,13 +11,13 @@ export default function () {
       icon: <AiOutlineSelect />,
       name: 'use-bootstrap-select',
       desc: 'Create a select element using the native Bootstrap 5 dropdown UI',
-      link: 'https://github.com/use-bootstrap/use-bootstrap-select',
+      link: 'https://use-bootstrap-select.js.org',
     },
     {
       icon: <BsTags />,
       name: 'use-bootstrap-tag',
       desc: 'Tag input for Bootstrap 5',
-      link: 'https://github.com/use-bootstrap/use-bootstrap-tag',
+      link: 'https://use-bootstrap-tag.js.org',
     },
   ]
   return (
@@ -33,7 +33,7 @@ export default function () {
         <title>{`${pkg.name} | ${pkg.description}`}</title>
         <style dangerouslySetInnerHTML={{ __html: style }}></style>
       </head>
-      <body>
+      <body className="bg-body-tertiary">
         <nav className="navbar navbar-expand-lg py-3">
           <div className="container justify-content-start">
             <a className="navbar-brand d-flex align-items-end gap-3" href="/">
