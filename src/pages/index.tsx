@@ -1,14 +1,25 @@
 import { BsBootstrapFill, BsGithub, BsTags } from 'react-icons/bs/index.js'
 import { FiMoon, FiSun } from 'react-icons/fi/index.js'
-import { AiOutlineSelect } from 'react-icons/ai/index.js'
 import pkg from '../../package.json'
 import style from '../style.css.txt'
 import script from '../script.js.txt'
 
+function UseBootstrapSelectIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"></path><path d="m12 12 4 10 1.7-4.3L22 16Z"></path></svg>
+  )
+}
+
+function UseBootstrapToasterIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+  )
+}
+
 export default function () {
   const items = [
     {
-      icon: <AiOutlineSelect />,
+      icon: <UseBootstrapSelectIcon />,
       name: 'use-bootstrap-select',
       desc: 'Create a select element using the native Bootstrap 5 dropdown UI',
       link: 'https://use-bootstrap-select.js.org',
@@ -18,6 +29,12 @@ export default function () {
       name: 'use-bootstrap-tag',
       desc: 'Tag input for Bootstrap 5',
       link: 'https://use-bootstrap-tag.js.org',
+    },
+    {
+      icon: <UseBootstrapToasterIcon />,
+      name: 'use-bootstrap-toaster',
+      desc: 'Bootstrap toast generator',
+      link: 'https://use-bootstrap-toaster.js.org',
     },
   ]
   return (

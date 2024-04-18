@@ -12,7 +12,8 @@
     "bootstrap select",
     "bootstrap dropdown",
     "bootstrap tag",
-    "bootstrap tag input"
+    "bootstrap tag input",
+    "bootstrap toast"
   ],
   "scripts": {
     "dev": "halaman dev src/pages --watch=src/**/*",
